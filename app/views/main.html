@@ -1,78 +1,8 @@
-<!-- <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
- -->
-
- <div id="wrapper">
-  <div id="sidebar-wrapper" class="col-md-2 hidden-xs hidden-sm">
-            <div id="sidebar">
-                <ul class="nav list-group">
-                    <li>
-                        <a class="list-group-item" href="./map-test-static-2.html"><i class="icon-home icon-1x"></i>Static Content</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="./map-test-map-2.html"><i class="icon-home icon-1x"></i>Map Content</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="./map-test-static-3.html"><i class="icon-home icon-1x"></i>Directions Content</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 4</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 5</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 6</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 7</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 8</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 9</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 10</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 11</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="main-wrapper" class="col-md-10"> <!-- remove pull right to get map at small size -->
-            <div id="main">
-<!--               <div class="page-header">
-                <h3>Site URL</h3>
-              </div> -->
-              <!-- <div id="mapid"></div> -->
-              <div id="map" ng-controller="MainCtrl">
-              	<leaflet lf-center="center" defaults="defaults"></leaflet>
-              </div>
-
-            </div>
-        </div>
+<!-- remove pull right to get map at small size -->
+<div id="main-wrapper" class="col-md-10"> 
+    <div id="map-wrapper">
+      <div id="map" ng-controller="MainCtrl">
+      	<leaflet lf-center="center" defaults="defaults"></leaflet>
+      </div>
+    </div>
 </div>
