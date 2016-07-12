@@ -8,7 +8,7 @@
  * Controller of the mapFullsizeAngularApp
  */
 angular.module('mapFullsizeAngularApp')
-  .controller('MainCtrl', ['$scope',  function () {
+  .controller('MainCtrl', ['$scope',  function($scope) {
   	angular.extend($scope, {
 		center: {
 			lat: 36.9914,
@@ -19,5 +19,6 @@ angular.module('mapFullsizeAngularApp')
 			scrollWheelZoom: false,
 			zoomControlPosition: 'topright'
   		}
+  	});
     
   }]);

@@ -68,7 +68,10 @@
 <!--               <div class="page-header">
                 <h3>Site URL</h3>
               </div> -->
-              <div id="mapid"></div>
+              <!-- <div id="mapid"></div> -->
+              <div id="map" ng-controller="MainCtrl">
+              	<leaflet lf-center="center" defaults="defaults"></leaflet>
+              </div>
 
             </div>
         </div>
