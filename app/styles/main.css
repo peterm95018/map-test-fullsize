@@ -4,7 +4,7 @@ html,body {
 
 body {
     padding-top: 50px;
-    overflow: hidden;
+   /* overflow: hidden; */
 }
 
 #wrapper {
@@ -16,33 +16,36 @@ body {
     left: 0;
     display: inline-block;
 }
+
 #main-wrapper {
     height: 100%;
     overflow-y: auto;
-    padding: 50px 0 0px 0;
+    padding: 50px 0 0px 0px;
 }
 
 #map-wrapper {
     height: 100%;
     width: 100%;
-    position: fixed;
-    overflow-y: auto;
-    padding: 50px 0 0px 0;
+    /* margin-top: 50px; */
 }
 
 
 #main-static {
-    /* position: relative; */
-    /* height: 100%; */
+    position: relative;
+    height: 100%;
     overflow-y: auto;
-    padding: 0 15px; /* psm removed to allow full width */
+    padding: 0 15px; /* psm added to give some whitespace */
 }
+
 
 #sidebar-wrapper {
     height: 100%;
     padding: 50px 0 0px 0;
     position: fixed;
     border-right: 1px solid gray;
+    z-index: 99;
+  	background:rgb(255,255,255);
+ 	background:rgba(255,255,255,.85);
 }
 #sidebar {
     position: relative;
@@ -50,16 +53,18 @@ body {
     overflow-y: auto;
 }
 #sidebar .list-group-item {
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        background: transparent;
 }
 
 /*psm add */
 #map {
   height: 100%;
   width: 100%;
+  position: fixed;
 }
 
 .angular-leaflet-map {
@@ -67,22 +72,47 @@ body {
 	width: 100%;
 }
 
+.leaflet-top {
+	margin-top: 70px;
+}
 
+/*
 @media (max-width: 992px) {
     body {
         margin-top: 70px;
     }
+
 }
+*/
 @media (min-width: 992px) {
-    #main-wrapper {
-        float:right;
-    }
+	body {
+		margin-top: 70px;
+	}
+
 }
+
 @media (max-width: 992px) {
-    #main-wrapper {
-        padding-top: 50px; /* keep zoom control in same spot small size */
+	body {
+        margin-top: 70px;
     }
+
+
+    #main-wrapper {
+        padding-top: 50px; /* keep zoom control in top right at smaller sizes */
+    }
+
+
+	#sidebar-wrapper {
+        position: static;
+        height:auto;
+        max-height: 300px;
+        border-right:0;
+  		overflow:scroll;
+    }
+
 }
+
+/*
 @media (max-width: 992px) {
     #sidebar-wrapper {
         position: static;
@@ -92,3 +122,4 @@ body {
   		overflow:scroll;
     }
 }
+*/
