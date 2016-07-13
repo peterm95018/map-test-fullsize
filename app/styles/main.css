@@ -76,14 +76,7 @@ body {
 	margin-top: 70px;
 }
 
-/*
-@media (max-width: 992px) {
-    body {
-        margin-top: 70px;
-    }
 
-}
-*/
 @media (min-width: 992px) {
 	body {
 		margin-top: 70px;
@@ -96,11 +89,9 @@ body {
         margin-top: 70px;
     }
 
-
     #main-wrapper {
         padding-top: 50px; /* keep zoom control in top right at smaller sizes */
     }
-
 
 	#sidebar-wrapper {
         position: static;
@@ -112,14 +103,4 @@ body {
 
 }
 
-/*
-@media (max-width: 992px) {
-    #sidebar-wrapper {
-        position: static;
-        height:auto;
-        max-height: 300px;
-        border-right:0;
-  		overflow:scroll;
-    }
-}
-*/
+
