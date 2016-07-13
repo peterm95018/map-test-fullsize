@@ -45,6 +45,9 @@ body {
     padding: 50px 0 0px 0;
     position: fixed;
     border-right: 1px solid gray;
+    z-index: 99;
+  	background:rgb(255,255,255);
+ 	background:rgba(255,255,255,.85);
 }
 #sidebar {
     position: relative;
@@ -56,6 +59,8 @@ body {
         border-left: 0;
         border-right: 0;
         border-top: 0;
+        background: transparent;
+
 }
 
 /*psm add */
@@ -166,15 +171,15 @@ body {
                 </ul>
             </div>
         </div>
-        <div id="main-wrapper" class="col-md-10"> <!-- remove pull right to get map at small size -->
-            <div id="main">
+        <!-- <div id="main-wrapper" class="col-md-10">  --><!-- remove pull right to get map at small size -->
+            <!-- <div id="main"> -->
 <!--               <div class="page-header">
                 <h3>Site URL</h3>
               </div> -->
               <div id="mapid"></div>
 
-            </div>
-        </div>
+           <!--  </div> -->
+        <!-- </div> -->
 </div>
 
 
