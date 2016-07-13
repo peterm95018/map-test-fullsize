@@ -27,13 +27,13 @@ body {
     width: 100%;
     position: fixed;
     overflow-y: auto;
-    ppadding: 50px 0 0px 0;
+    padding: 50px 0 0px 0;
 }
 
 
 #main-static {
-    position: relative;
-    height: 100%;
+    /* position: relative; */
+    /* height: 100%; */
     overflow-y: auto;
     padding: 0 15px; /* psm removed to allow full width */
 }
