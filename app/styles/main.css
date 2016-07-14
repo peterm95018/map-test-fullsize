@@ -72,6 +72,7 @@ body {
 	width: 100%;
 }
 
+/* leaflet zoom control */
 .leaflet-top {
 	margin-top: 70px;
 }
