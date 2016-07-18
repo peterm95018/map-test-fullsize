@@ -93,6 +93,11 @@ body {
 	body {
 		margin-top: 70px;
 	}
+  
+  /* float the image right in directions */
+  .my-pull-right {
+  float:right;
+  }
 
 }
 
@@ -101,9 +106,13 @@ body {
         margin-top: 70px;
     }
 
+
+
     #main-wrapper {
         padding-top: 50px; /* keep zoom control in top right at smaller sizes */
+
     }
+
 
 	#sidebar-wrapper {
         position: static;
@@ -112,6 +121,7 @@ body {
         border-right:0;
   		overflow:scroll;
     }
+
 
 }
 
