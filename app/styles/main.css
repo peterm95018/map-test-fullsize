@@ -37,7 +37,6 @@ body {
     padding: 0 15px; /* psm added to give some whitespace */
 }
 
-
 #sidebar-wrapper {
     height: 100%;
     padding: 50px 0 0px 0;
@@ -47,11 +46,13 @@ body {
   	background:rgb(255,255,255);
  	background:rgba(255,255,255,.85);
 }
+
 #sidebar {
     position: relative;
     height: 100%;
     overflow-y: auto;
 }
+
 #sidebar .list-group-item {
         border-radius: 0;
         border-left: 0;
@@ -75,6 +76,16 @@ body {
 /* leaflet zoom control */
 .leaflet-top {
 	margin-top: 70px;
+}
+
+
+
+#footer {
+  padding-left: 10px;
+  font-size: 11px;
+  position:absolute;
+  bottom: 0px;
+  height: 40px;
 }
 
 
