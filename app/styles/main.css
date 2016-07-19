@@ -73,9 +73,10 @@ body {
 	width: 100%;
 }
 
-/* leaflet zoom control */
+/* leaflet zoom control. padded from right 15 */
 .leaflet-top {
 	margin-top: 70px;
+  padding-right: 15px;
 }
 
 
