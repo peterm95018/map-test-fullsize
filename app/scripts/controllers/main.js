@@ -15,7 +15,7 @@ angular.module('mapFullsizeAngularApp')
 		center: {
 			lat: 36.9956739, /* 36.9956739, -122.0589681 /* 36.9914, -122.0609 */
 			lng: -122.0589681,
-			zoom: 17
+			zoom: 15
   		},
   		defaults: {
 			scrollWheelZoom: false,
