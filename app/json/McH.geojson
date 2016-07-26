@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-07-21T19:53:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/34441518",
+      "properties": {
+        "@id": "way/34441518",
+        "addr:city": "Santa Cruz",
+        "addr:housenumber": "414",
+        "addr:postcode": "95064",
+        "addr:street": "McHenry Road",
+        "amenity": "library",
+        "building": "yes",
+        "name": "McHenry Library"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.059395,
+              36.9962411
+            ],
+            [
+              -122.0595802,
+              36.9958276
+            ],
+            [
+              -122.0593701,
+              36.9957626
+            ],
+            [
+              -122.0591799,
+              36.9957031
+            ],
+            [
+              -122.0593527,
+              36.9952962
+            ],
+            [
+              -122.0587097,
+              36.9951067
+            ],
+            [
+              -122.058356,
+              36.9959488
+            ],
+            [
+              -122.0586745,
+              36.996041
+            ],
+            [
+              -122.059395,
+              36.9962411
+            ]
+          ]
+        ]
+      }
+    }
+]
+}

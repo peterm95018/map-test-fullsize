@@ -38,6 +38,10 @@ angular
         controller: 'DirectionsCtrl',
         controllerAs: 'directions'
       })
+      .when('/geomap', {
+		templateUrl: 'views/geomap.html',
+		controller: 'GeomapCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
