@@ -13,7 +13,7 @@ angular.module('mapFullsizeAngularApp')
 		center: {
 			lat: 36.9956739, /* 36.9956739, -122.0589681 /* 36.9914, -122.0609 */
 			lng: -122.0589681,
-			zoom: 18
+			zoom: 16
   		},
   		defaults: {
 			scrollWheelZoom: false,
@@ -33,91 +33,28 @@ angular.module('mapFullsizeAngularApp')
   	});
 
 
-
-
-var defaultMarker = L.Marker();
-
-var mouseoverMarker = L.Marker();
-
-var layers = {};
-
-$scope.hoveritem = {};
-
-function pointMouseover(leafletEvent) {
-    var layer = leafletEvent.target;
-    layer.setIcon(mouseoverMarker);
-    $scope.$apply(function () {
-        $scope.hoveritem = layer.feature.properties.id;
-    })
-}
-
-function pointMouseout(leafletEvent) {
-    var layer = leafletEvent.target;
-    layer.setIcon(defaultMarker);
-
-    $scope.$apply(function () {
-        $scope.hoveritem = {};
-    })
-}
-
-$scope.menuMouse = function (show) {
-    var layer = layers[show.properties.id];
-    //console.log(layer);
-    layer.setIcon(mouseoverMarker);
-}
-
-$scope.menuMouseout = function (show) {
-    var layer = layers[show.properties.id];
-    layer.setIcon(defaultMarker);
-}
-
 // Get the countries geojson data from a JSON
-$http.get('json/McH.geojson').success(function (data, status) {
+$http.get("json/McH.geojson").success(function(data, status) {
     angular.extend($scope, {
         geojson: {
             data: data,
             onEachFeature: function (feature, layer) {
-                layer.setIcon(defaultMarker);
-                layer.on({
-                    mouseover: pointMouseover,
-                    mouseout: pointMouseout
-                });
-                layers[feature.properties.id] = layer;
-                //console.log(layers);
+                // popup the feature name on click
+                if(feature.properties.name) {
+                    layer.bindPopup(feature.properties.name);
+                }
+            },
+            style: {
+                fillColor: "red",
+                weight: 4,
+                opacity: 1,
+                color: '#f03',
+                dashArray: '8',
+                fillOpacity: 0.5
             }
         }
-
     });
 });
-
-// // Get the countries geojson data from a JSON
-// $http.get("json/McH.geojson").success(function(data, status) {
-//     angular.extend($scope, {
-//         geojson: {
-//             data: data,
-//             onEachFeature: function (feature, layer) {
-//                 layer.setIcon(defaultMarker);
-//                 layer.on({
-//                     mouseover: pointMouseover,
-//                     mouseout: pointMouseout
-//                 });
-//                 layers[feature.properties.id] = layer;
-//                 //console.log(layers);
-//             }
-//             // style: {
-//             //     fillColor: "green",
-//             //     weight: 2,
-//             //     opacity: 1,
-//             //     color: 'white',
-//             //     dashArray: '3',
-//             //     fillOpacity: 0.7,
-//             //     message: 'McHenry Library',
-//             //     draggable: false,
-//             //     focus: true
-//             // }
-//         }
-//     });
-// });
 
 
   }]);
